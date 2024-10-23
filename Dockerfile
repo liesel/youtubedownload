@@ -7,6 +7,7 @@ WORKDIR /app
 # Instale as dependências necessárias para o Python e o sistema operacional
 RUN apt-get update && apt-get install -y \
     build-essential \
+    ffmpeg \
     && apt-get clean
 
 # Atualize o pip para a versão mais recente
